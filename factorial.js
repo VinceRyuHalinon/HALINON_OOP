@@ -37,7 +37,8 @@ console.log("Please Enter A non-negative Number:")
 });
 
 } else if (choice==="3"){
-    console.log("Exit");
+    console.log("Exiting Program...Goodbye");
+    rl.close()
 } else {
     console.log("Invalid Choice. Please Try Again");
 } 

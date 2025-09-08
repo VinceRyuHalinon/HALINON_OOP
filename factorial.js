@@ -17,8 +17,10 @@ console.log("3. Exit ");
 rl.question("Enter your choice (1-3)" ,choice =>{
  if (choice==="1"){
    console.log("Hello There!");
+   backtomenu();
 } else if (choice==="2"){
     ComputeFactorial();
+     backtomenu();
 } else if (choice==="3"){
     console.log("Exiting Program...Goodbye");
     rl.close()
@@ -56,5 +58,28 @@ console.log("Please Enter A non-negative Number:")
 
 });
 
+
+
+}
+function backtomenu(){
+ console.log ("--------------------");
+ console.log ("1. Back to Menu");
+console.log ("2. Exit");
+ rl.question("What would you like to do next? (1-2):", (backtomenuchoice) =>{
+ if(backtomenuchoice === "1"){
+    console.clear();
+    mainMenu();
+  } else if (backtomenuchoice === "2"){
+    console.log("Exiting Program....Goodbye!");
+    rl.close();
+  } else {
+    console.log("Invalid Choice. Please Try Again");
+    backtomenu();
+  }
+
+
+
+
+ })
 }
 mainMenu();

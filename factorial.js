@@ -6,6 +6,7 @@ output:process.stdout
 
 })
 
+function mainMenu(){ 
 
 console.log("Factorial Application");
 
@@ -50,3 +51,4 @@ console.log("Please Enter A non-negative Number:")
 
 })
 
+}

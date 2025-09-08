@@ -18,7 +18,26 @@ rl.question("Enter your choice (1-3)" ,choice =>{
  if (choice==="1"){
    console.log("Hello There!");
 } else if (choice==="2"){
-    console.log("Factorial");
+    ComputeFactorial();
+} else if (choice==="3"){
+    console.log("Exiting Program...Goodbye");
+    rl.close()
+} else {
+    console.log("Invalid Choice. Please Try Again");
+    mainMenu();
+} 
+
+
+
+
+
+
+})
+
+}
+function ComputeFactorial(){
+
+console.log("Factorial");
 rl.question ("Enter a number for a Factorial:",(numStr) =>{
     let num = parseInt(numStr);
 
@@ -36,21 +55,6 @@ console.log("Please Enter A non-negative Number:")
  
 
 });
-
-} else if (choice==="3"){
-    console.log("Exiting Program...Goodbye");
-    rl.close()
-} else {
-    console.log("Invalid Choice. Please Try Again");
-    mainMenu();
-} 
-
-
-
-
-
-
-})
 
 }
 mainMenu();

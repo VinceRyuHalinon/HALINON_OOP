@@ -42,6 +42,7 @@ console.log("Please Enter A non-negative Number:")
     rl.close()
 } else {
     console.log("Invalid Choice. Please Try Again");
+    mainMenu();
 } 
 
 
@@ -52,3 +53,4 @@ console.log("Please Enter A non-negative Number:")
 })
 
 }
+mainMenu();

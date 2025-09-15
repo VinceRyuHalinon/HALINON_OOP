@@ -19,5 +19,22 @@ constructor (name,health,attack){
  }
 
 
+ class Mage extends Hero {
+    constructor(name,health,attack,mana){
+        super(name,health,attack);
+        this.mana = mana;
+    }
+    useAbility(){
+        console.log(`${this.name} casts expelliarmus`);
+    }
+    
+    
+    
+ }
+
  const warrior = new Warrior("Thorfin",100,10);
  warrior.useAbility();
+
+ 
+ const mage = new Mage ("Harry Potter",90,8,50);
+ mage.useAbility();
